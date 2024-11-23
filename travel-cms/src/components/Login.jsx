@@ -4,7 +4,7 @@ import API from "../util/api";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
-import { toast } from "react-toastify"; 
+import { toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 const Login = () => {
@@ -17,7 +17,7 @@ const Login = () => {
     try {
       const { data } = await API.post("/auth/login", { email, password });
       localStorage.setItem("token", data.token);
-      toast.success("LoggedIn successfully")
+      toast.success("LoggedIn successfully");
       navigate("/");
     } catch (err) {
       console.error(err);
@@ -57,9 +57,17 @@ const Login = () => {
           </form>
           <p className="mt-4 text-sm text-center text-gray-600">
             Don’t have an account?{" "}
-            <Link to='/register' className="text-blue-500 hover:underline">
+            <Button
+              onClick={() => {
+                navigate("/register");
+              }}
+              variant="outline"
+              className="text-blue-500 hover:underline"
+            >
               Register here
-            </Link>
+            </Button>
+            {/* <Link to='/register' className="text-blue-500 hover:underline"> */}
+            {/* </Link> */}
           </p>
         </CardContent>
       </Card>
