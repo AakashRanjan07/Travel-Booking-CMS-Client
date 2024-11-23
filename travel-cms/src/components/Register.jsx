@@ -70,6 +70,18 @@ const Register = () => {
             <Button type="submit" className="w-full">
               Register
             </Button>
+            <p className="mt-4 text-sm text-center text-gray-600">
+              Already have an account?{" "}
+              <Button
+                onClick={() => {
+                  navigate("/login");
+                }}
+                variant="outline"
+                className="text-blue-500 hover:underline"
+              >
+                Sign In
+              </Button>
+            </p>
           </form>
         </CardContent>
       </Card>
