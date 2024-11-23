@@ -7,7 +7,7 @@ import PackageList from "./components/PackageList.jsx";
 import PackageForm from "./components/PackageForm.jsx";
 import Login from "./components/Login.jsx";
 import Dashboard from "./App.jsx";
-import Register from "./components/register.jsx";
+import Register from "./components/Register.jsx";
 import AddBookingForm from "./components/AddBooking.jsx";
 import { ToastContainer } from "react-toastify";
 
