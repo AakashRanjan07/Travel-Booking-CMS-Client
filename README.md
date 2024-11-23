@@ -36,7 +36,7 @@ This is a Travel Booking CMS built with the **MERN Stack** (MongoDB, Express.js,
 
 ### Clone the repository
 
- - git clone https://github.com/yourusername/travel-booking-cms.git 
+ - git clone https://github.com/AakashRanjan07/Travel-Booking-CMS-Client.git 
 
 ### Frontend
  - cd client
